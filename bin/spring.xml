@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<bean id="profile" class="com.zomato.pkg.UserProfile">
+<!-- <property name="type" value="right angled"></property> -->
+<constructor-arg value= "Sandeep"></constructor-arg>
+<constructor-arg type="int" value= "69"></constructor-arg>
+<constructor-arg type="int" value= "8867"></constructor-arg>
+<constructor-arg value= "ButterNaan_MalaiKofta"></constructor-arg>
+<constructor-arg ref="first"></constructor-arg>
+<!-- <constructor-arg ref="second"></constructor-arg> -->
+<!-- <property name="homeAddress" ref="first"></property>
+<property name="workAddress" ref="second"></property> -->
+</bean>
+
+<bean id="first" class="com.zomato.pkg.Address">
+<property name="street" value="Chamrajpet"></property>
+<property name="city" value="Bangalore"></property>
+<property name="state" value="Karnataka"></property>
+</bean>
+
+<!-- <bean id="second" class="com.zomato.pkg.Address">
+<property name="street" value="ITPl"></property>
+<property name="city" value="Bangalore"></property>
+<property name="state" value="Karnataka"></property>
+</bean> -->
+
+</beans>
